@@ -15,6 +15,7 @@ var hijos_recargo = 0.2; // 20%
 
 var flag = true;
 
+//noprotect
 while(flag){
     var recargo = 0
     var recargo_total = 0
