@@ -1,0 +1,7 @@
+﻿Proyecto Final Puntos Extras
+
+
+Descripción del Problema
+
+
+* El problema que presentaba la empresa era que solo podían presentar 50 cotizaciones diarias a clientes por lo que pierden clientes por falta de agilidad y automatización en el proceso de generación de cotizaciones.

@@ -1,0 +1,22 @@
+﻿Algoritmo del Procedimiento
+
+
+1. Definimos precio base para la cotización del seguro
+2. Definimos los recargos en base a las edades
+3. Definimos los recargos en base a la cantidad de hijos
+4. Definimos los recargos en base a las propiedades
+5. Definimos el recargo en base al salario del asegurado
+6. Definimos un ciclo en el cual se harán cotizaciones hasta que el cliente escriba la palabra salir
+7. Preguntamos sobre el nombre del asegurado
+8. Preguntamos la edad del asegurado
+9. Preguntamos si el asegurado está casado o no
+10. Preguntamos si tienen hijos o no
+11. Aplicamos el recargo en base a la edad del asegurado
+12. Aplicamos el recargo si y sólo si el asegurado está casado y en base a su edad
+13. Aplicamos recargo en base a la cantidad de hijos si y sólo si los tienen
+14. Aplicamos los recargos en base a la cantidad de propiedades si y sólo si las tienen
+15. Se aplica el recargo en base al salario del asegurado
+16. Se suman los recargos correspondientes
+17. Se presenta el recargo total en base a las sumatorias de recargos
+18. Se realiza la sumatoria de los recargos y el precio base del seguro
+19. Se presenta el precio final al cliente
