@@ -12,6 +12,8 @@ var casado_25 = 0.2; // 20%
 var casado_50 = 0.3; // 30%
 
 var hijos_recargo = 0.2; // 20%
+var recargo_propiedades = 0.35; // 35%
+var salario_asegurado = 0.05; // 0.5%
 
 var flag = true;
 
@@ -24,8 +26,16 @@ while(flag){
 //Mensajes de alerta para ingresar datos 
 
 var nombre = prompt("Ingrese su nombre, por favor")
+
+var salario = prompt("Ingrese el salario del asegurado", "Ingrese solo numeros")
+var salario = parseInt(salario)
+
 var edad = prompt("¿Cuantos años tiene? Ingrese solamente números ")
 var casado = prompt("¿Está casado actualmente?")
+
+var propiedades = prompt("¿Cuantas propiedades tiene a su nombre?", "Ingrese solo numeros")
+var propiedades = parseInt(propiedades)
+
 
 //Comprobamos la edad del cónyuge, solamente si se está casado/a
 var edad_conyuge
@@ -45,18 +55,17 @@ var cantidad_hijos = 0
 
 if("SI" == hijos.toUpperCase()){
     cantidad_hijos = prompt("¿Cuantos hijos tiene?", "Ingrese solo numeros")
-    cantidad_hijos = parseInt(cantidad_hijos,10)
+    cantidad_hijos = parseInt(cantidad_hijos)
+}else{
+    cantidad_hijos = parseInt(0);
 }
 
 if("SI" == casado.toUpperCase()){
     edad_conyuge = prompt("¿Que edad tiene su esposo/a?", "Ingrese solo numeros")
-    edad_conyuge_numero = parseInt(edad_conyuge,10)
+    edad_conyuge_numero = parseInt(edad_conyuge)
+}else{
+    edad_conyuge_numero = parseInt(0);
 }
-/**
- * 1. convierta la cantidad de hijos a numero
- */
-
-
 
 //Aquí debe calcular el recargo total basado en las respuestas ingresadas
 
@@ -79,9 +88,6 @@ else if(edad_numero>=50){
 }
 
 
-/** 
- * 2. Recargo por la edad del conyuge
- */
 if(edad_conyuge_numero>=18 && edad_conyuge_numero<=24){
     recargo = precio_base * casado_18
     recargo_total = recargo_total + recargo
@@ -98,11 +104,22 @@ else if(edad_conyuge_numero>=50){
 
 
 /**
- * 3. Recargo por la cantidad de hijos 
+ *  Recargo por la cantidad de hijos 
  */  
 recargo_total += cantidad_hijos * (precio_base * hijos_recargo);
+/**
+ *  Recargo por la cantidad de propiedades 
+ */  
+recargo_total += propiedades * (precio_base * recargo_propiedades);
+/**
+ *  Recargo por salario
+ */  
+recargo_total += salario * salario_asegurado;
+
+/* precio Final */
 
 precio_final = precio_base + recargo_total
+
 //Resultado
 alert ("Para el asegurado "+nombre)
 alert ("El recargo total sera de: "+recargo_total)
