@@ -1,0 +1,35 @@
+﻿Proyecto Final
+
+
+Primera Parte
+El problema que presenta la empresa tiene que ver con una ineficiencia a la hora de enviar cotizaciones. El problema tiene que ver con que las cotizaciones se realizan manualmente y solo pueden enviar hasta 50 cotizaciones diarias, por lo que están perdiendo clientes y dinero. 
+
+
+Para cambiar el valor del seguro, se están tomando en cuenta diferentes situaciones como: 
+
+
+Rango de edades
+* La edad del asegurado
+* Si el asegurado está casado o no y de ser así también la edad de la pareja
+Cantidad de hijos
+* Cantidad de hijos del asegurado si es que los tiene
+
+
+________________
+
+
+Segunda Parte
+Algoritmo
+1. Definimos un precio base para la cotización del seguro
+2. Definimos los recargos en base a las edades
+3. Definimos los recargos en base a la cantidad de hijos
+4. Preguntamos Nombre para identificar al asegurado
+5. Preguntamos cuántos años tiene el asegurado
+6. Aplicamos el recargo correspondiente a la edad
+7. Preguntamos sobre si está casado o no
+8. si está casado preguntamos la edad del cónyuge
+9. Basado en la edad del cónyuge aplicamos el recargo correspondiente
+10. Preguntamos si tiene hijos
+11. Si tiene hijos, Preguntamos la cantidad de hijos que tiene
+12. Basados en la cantidad de hijos, aplicamos el recargo correspondiente por cada hijo
+13. Si no está casado, presentamos la cotización final con las aplicaciones correspondientes de cada dato.
